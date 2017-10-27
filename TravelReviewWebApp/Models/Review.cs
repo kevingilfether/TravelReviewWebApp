@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -10,11 +11,13 @@ namespace TravelReviewWebApp.Models
     {
         [Key]
         public int ReviewID { get; set; }
+        [MinLength(1),MaxLength(85)]
         public string Title { get; set; }
+        [MinLength(1),MaxLength(500)]
         public string Content { get; set; }
         [Display(Name ="Date Published")]
         public DateTime PublishDate { get; set; }
-        [MinLength(1), MaxLength(5)]
+        [Range(1,5)]
         public int Stars { get; set; }
 
         [ForeignKey("Category")]
