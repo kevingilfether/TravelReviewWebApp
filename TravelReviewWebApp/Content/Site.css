@@ -1,6 +1,5 @@
 ﻿body {
     padding-top: 50px;
-    padding-bottom: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -24,10 +23,29 @@ textarea {
 }
 
 .homeIndexJumbotron {
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('Img/BigBrownVan.jpg');
+    background-position:center;
+    background-size:cover;
+    height:300px;
 }
 
 .centered {
     text-align:center;
+}
+
+.contentRow {
+    margin-right:10px;
+    margin-left:10px;
+}
+
+footer {
+    margin:0px;
+}
+
+.footerText {
+    margin-top:50px;
+    margin-bottom:0px;
+    font-size:14px;
 }

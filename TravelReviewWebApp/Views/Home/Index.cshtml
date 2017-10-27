@@ -2,32 +2,28 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <div class="container homeIndexJumbotron">
+<div class="jumbotron homeIndexJumbotron">
+    <div class="container">
         <h1 class="centered">BANDS IN VANS</h1>
         <h3 class="centered">The touring musician's resource</h3>
         <p class="lead centered">Where to play, park, and crash</p>
     </div>
 </div>
 
-<div class="row">
+<div class="row contentRow">
     <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <h2>Reviews</h2>
+        <p>The perfect place to read or rate! Come for the content, stay for the poor spelling and grammar.</p>
+        <p>@Html.ActionLink("Rock a Review", "Index", "Reviews", new { @class = "btn btn-default", role = "button" })</p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Categories</h2>
+        <p>"Venue" and "Crashpad" not good enough for you? Click here.</p>
+        <p>@Html.ActionLink("Crack a Category", "Index", "Categories", new { @class = "btn btn-default", role = "button" })</p>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>Contact</h2>
+        <p>Grab a towel and some smoke, and let Kevin know what's up.</p>
+        <p>@Html.ActionLink("Okay, I guess", "Contact", "Home", new { @class = "btn btn-default", role = "button" })</p>
     </div>
 </div>
