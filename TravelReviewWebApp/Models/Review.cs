@@ -11,7 +11,7 @@ namespace TravelReviewWebApp.Models
     {
         [Key]
         public int ReviewID { get; set; }
-        [MinLength(1),MaxLength(85)]
+        [MinLength(1),MaxLength(85), Display(Name ="Name")]
         public string Title { get; set; }
         [MinLength(1),MaxLength(500)]
         public string Content { get; set; }
