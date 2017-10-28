@@ -4,7 +4,24 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2 class="body-content">Details</h2>
+
+<div class="col-sm-6 col-md-4 col-lg-4">
+    <div class="thumbnail reviewThumbnail">
+        <h3>@Html.DisplayFor(model => model.Title)</h3>
+        <p>@Html.DisplayFor(model => model.Stars)</p>
+        <p>@Html.DisplayFor(model => model.Content)</p>
+        <p>@Html.DisplayFor(model => model.Category.Name)</p>
+        <p>@Html.DisplayFor(model => model.PublishDate)</p>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>
+</div>
+
+
+
 
 @* Old Detail table
     
