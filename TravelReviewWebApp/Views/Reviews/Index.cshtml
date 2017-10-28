@@ -13,7 +13,6 @@
 
 @foreach (var item in Model)
 {
-    <div class="row">
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
                 <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
@@ -21,12 +20,13 @@
                 <p>@Html.DisplayFor(modelItem => item.Content)</p>
                 <p>@Html.DisplayFor(modelItem => item.Category.Name)</p>
                 <p>@Html.DisplayFor(modelItem => item.PublishDate)</p>
-                <p>@Html.ActionLink("Edit", "Edit", new { id = item.ReviewID })</p>
+                <p>@Html.ActionLink("Edit", "Edit", new { id = item.ReviewID }) | @Html.ActionLink("Details", "Details", new { id = item.ReviewID }) | @Html.ActionLink("Delete", "Delete", new { id = item.ReviewID }) </p>
                 @*< p >< a href = "#" class="btn btn-primary" role="button">Button</a> <a href = "#" class="btn btn-default" role="button">Button</a></p>*@
             </div>
         </div>
-    </div>
 }
+
+<br />
 
 
 @*<table class="table">

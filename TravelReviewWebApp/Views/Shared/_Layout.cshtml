@@ -29,10 +29,16 @@
     </div>
 
     @RenderBody()
-    
-    <footer>
-        <p class="footerText">@DateTime.Now.Year - A student project of Kevin Gilfether, no copyright claimed or intended.</p>
-    </footer>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <footer>
+                    <p class="footerText">@DateTime.Now.Year - A student project of Kevin Gilfether, no copyright claimed or intended.</p>
+                </footer>
+            </div>
+        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
