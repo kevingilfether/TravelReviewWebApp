@@ -35,11 +35,22 @@ textarea {
 .centeredJumbotronText {
     text-align:center;
     color: #182E34 !important;
+    background-color: rgba(197, 221, 197, .7);
+    padding-left:0px;
+    padding-right:0px;
+    margin-left:0px;
+    margin-right:0px;
 }
 
 .contentRow {
     margin-right:10px;
     margin-left:10px;
+}
+
+/*Review index thumbnail styling*/
+
+.reviewThumbnail {
+    margin-bottom:10px;
 }
 
 
@@ -48,11 +59,12 @@ footer {
     margin:0px;
     position:fixed;
     bottom:0;
-    left:5px;
+    width:100%;
+    background-color: #182E34;
+    color:white;
 }
 
 .footerText {
-    margin-top:50px;
     margin-bottom:0px;
     font-size:14px;
 }
