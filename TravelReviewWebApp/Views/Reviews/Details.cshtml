@@ -9,6 +9,7 @@
 <div class="col-sm-6 col-md-4 col-lg-4">
     <div class="thumbnail reviewThumbnail">
         <h3>@Html.DisplayFor(model => model.Title)</h3>
+        <p>@Html.DisplayFor(model => model.Category.Name)</p>
         <p>
             @if (Model.Stars == 1)
             {<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -47,7 +48,6 @@
 
         </p>
         <p>@Html.DisplayFor(model => model.Content)</p>
-        <p>@Html.DisplayFor(model => model.Category.Name)</p>
         <p>@Html.DisplayFor(model => model.PublishDate) </p>
         <p>
             @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |

@@ -15,7 +15,7 @@ namespace TravelReviewWebApp.Models
         public string Title { get; set; }
         [MinLength(1),MaxLength(500)]
         public string Content { get; set; }
-        [Display(Name ="Date Published")]
+        [Display(Name ="Date Published"), DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime PublishDate { get; set; }
         [Range(1,5)]
         public int Stars { get; set; }
