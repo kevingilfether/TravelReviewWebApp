@@ -17,6 +17,7 @@
         <div class="col-sm-6 col-md-4 col-lg-4">
             <div class="thumbnail reviewThumbnail">
                 <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+                @* Below: The styling for the star glyphicons *@
                 <p>
                     @if (item.Stars == 1)
                     {<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -54,7 +55,7 @@
                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span>}
 
                 </p>
-                <p>@Html.DisplayNameFor(model => model.Category.Name) : @Html.DisplayFor(modelItem => item.Category.Name)</p>
+                <p><span class="categoryBold">@Html.DisplayNameFor(model => model.Category.Name)</span>: @Html.DisplayFor(modelItem => item.Category.Name)</p>
                 <p>@Html.ActionLink("Edit", "Edit", new { id = item.ReviewID }) | @Html.ActionLink("Details", "Details", new { id = item.ReviewID }) | @Html.ActionLink("Delete", "Delete", new { id = item.ReviewID }) </p>
             </div>
         </div>
