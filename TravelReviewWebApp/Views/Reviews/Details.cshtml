@@ -14,37 +14,37 @@
             @if (Model.Stars == 1)
             {<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>}
+            <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>}
 
             else if (Model.Stars == 2)
             {<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>}
+            <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>}
 
             else if (Model.Stars == 3)
             {<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>}
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>}
 
             else if (Model.Stars == 4)
             {<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>}
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>}
 
             else if (Model.Stars == 5)
             {<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>}
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>}
 
         </p>
         <p>@Html.DisplayFor(model => model.Content)</p>
@@ -60,54 +60,54 @@
 
 
 @* Old Detail table
-    
-    <div>
-    <h4>Review</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.Name)
-        </dd>
+        <div>
+        <h4>Review</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Category.Name)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Category.Name)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Title)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Content)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Content)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PublishDate)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Content)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.PublishDate)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PublishDate)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Stars)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PublishDate)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Stars)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Stars)
+            </dt>
 
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>*@
+            <dd>
+                @Html.DisplayFor(model => model.Stars)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@
